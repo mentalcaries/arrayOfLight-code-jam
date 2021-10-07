@@ -1,0 +1,16 @@
+.cards__button{
+background: #DD3E42;
+border-radius: 8px;
+font-family: 'Quattrocento' ,sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 16px;
+color: #FFFFFF;
+margin:50px 0 0 0;
+min-width: 349px;
+height: 42px;
+border-style: none;
+cursor: pointer;
+
+}

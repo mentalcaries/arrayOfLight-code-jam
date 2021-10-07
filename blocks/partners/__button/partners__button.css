@@ -1,0 +1,15 @@
+.partners__button{
+margin-top:27px;  
+background: #DD3E42;
+border-radius: 8px;
+font-family: 'Quattrocento', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 16px;
+color: #FFFFFF;
+border-style: none;
+width: 349px;
+height: 42px;
+cursor: pointer;
+}
