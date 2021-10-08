@@ -12,9 +12,14 @@ height: 42px;
 border-style: none;
 max-width: 349px;
 margin-left: auto;
-    margin-right: auto;
-    min-width: 349px;
-    cursor: pointer;
-
-
+margin-right: auto;
+min-width: 349px;
+cursor: pointer;
+transition: background-color .3s linear;
+}
+.header__button:hover{
+    background-color: #F97773;
+}
+.header__button:active{
+   background-color:#C23E42;
 }

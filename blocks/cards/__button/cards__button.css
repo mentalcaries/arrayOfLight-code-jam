@@ -12,5 +12,11 @@ min-width: 349px;
 height: 42px;
 border-style: none;
 cursor: pointer;
-
+transition: background-color .3s linear;
 }
+.cards__button:hover{
+    background-color: #F97773;
+}
+.cards__button:active{
+    background-color:#C23E42;
+ }
