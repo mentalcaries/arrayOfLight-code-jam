@@ -16,6 +16,11 @@ The image is generated with the external library HTML2Canvas which used the cont
 
 At this point, the app will create a code that the user can use on the partner's site. Future options would include having the card automatically forwarded to the merchant.
 
+The main allows the user to register on the site and even communicate with the creators.
+
+
+
+
 ### Future Plans
 
 The location page should show participating merchant stores near or around the recipient (especially if in another country) via use of Google Maps.
