@@ -14,17 +14,19 @@
           <a href="#how-it-works" class="menu__link">how it works</a>
           <a href="#partners" class="menu__link">partners</a>
         </li>
-        <img
-          src="./images/logo__image.jpg"
-          alt="image of logo"
-          class="menu__logo"
-        />
+        <a href="#header">
+          <img
+            src="./images/logo__image.jpg"
+            alt="image of logo"
+            class="menu__logo"
+          />
+        </a>
         <li class="menu__list">
-          <a href="#" class="menu__link">contact us</a>
-          <a href="#" class="menu__link">join in</a>
+          <a href="#" class="menu__link menu_link_type_contact">contact us</a>
+          <a href="#" class="menu__link menu_type_join-in">join in</a>
         </li>
       </menu>
-      <header class="header">
+      <header class="header" id="header">
         <div class="header__content-wrapper">
           <img src="./images/header__image.jpg" alt="" class="header__image" />
           <div class="header__content">
@@ -34,7 +36,13 @@
             <p class="header__subtitle">
               Add some love and personal touch to your online-shopping cart
             </p>
-            <button class="header__button">Deliver a smile</button>
+            <button class="header__button" type="button">
+              <a
+                href="https://mentalcaries.github.io/smilevery-react/"
+                class="header__button-link"
+                >Deliver a smile</a
+              >
+            </button>
           </div>
           <img src="./images/header__image2.jpg" alt="" class="header__image" />
         </div>
@@ -97,7 +105,13 @@
         <p class="cards__subtitle">
           No extra fee for the postcard charged - Smilevery is free and fun!
         </p>
-        <button class="cards__button">Give it a try</button>
+        <button class="cards__button" type="button">
+          <a
+            href="https://mentalcaries.github.io/smilevery-react/"
+            class="cards__button-link"
+            >Give it a try
+          </a>
+        </button>
       </section>
       <section class="partners" id="partners">
         <h2 class="partners__title">Smilevery Family</h2>
@@ -140,7 +154,9 @@
           from the lack of customers during the pandemic? Or you’re a well-known
           company and want to try something new? We’re ready to cooperate!
         </p>
-        <button class="partners__button">Join us anytime</button>
+        <button class="partners__button" type="button" name="join-us">
+          Join us anytime
+        </button>
       </section>
       <footer class="footer">
         <p class="footer__title">
@@ -168,5 +184,98 @@
         </div>
       </footer>
     </div>
+    <div class="popup popup_type_join-us">
+      <h2 class="popup__title">Join us</h2>
+      <form class="popup__form" name="user_info">
+        <label for="name" class="popup__label">Full name</label>
+        <input type="text" id="name" class="popup__input" name="user-name" />
+        <label for="business-name" class="popup__label">Business name</label>
+        <input
+          type="text"
+          id="business-name"
+          class="popup__input"
+          name="business-name"
+        />
+        <label for="email" class="popup__label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="popup__input"
+          name="email"
+          placeholder="user@gmail.com"
+        />
+        <label for="mobile" class="popup__label">Mobile</label>
+        <input
+          type="tel"
+          id="mobile"
+          class="popup__input"
+          name="mobile-phone"
+          placeholder="+ _ (___) ___ __ __"
+        />
+        <label for="location" class="popup__label">Location</label>
+        <input
+          type="text"
+          id="location"
+          class="popup__input"
+          name="location"
+          placeholder="Where does your delivery service operate?"
+        />
+        <label for="field-of-activity" class="popup__label"
+          >Field of activity</label
+        >
+        <input
+          type="text"
+          id="field-of-activity"
+          class="popup__input"
+          name="field-of-activity"
+          placeholder="Shop, cafe, etc."
+        />
+        <label for="source" class="popup__label">Source</label>
+        <input
+          type="text"
+          id="source"
+          class="popup__input"
+          name="source"
+          placeholder="How did you hear about us?"
+        />
+        <button class="popup__submit-button" type="button">Submit</button>
+      </form>
+    </div>
+    <div class="popup popup_type_contact-us">
+      <h2 class="popup__title">Contact us</h2>
+
+      <label for="user-name" class="popup__label">Name</label>
+      <input
+        id="user-name"
+        type="text"
+        class="popup__input"
+        name="user-name"
+        placeholder="Full and business"
+      />
+      <label for="message" class="popup__label">Message</label>
+      <textarea
+        id="message"
+        class="popup__input popup__input_type_textarea"
+        name="user-message"
+        placeholder="Inform us about the problem"
+      ></textarea>
+      <label for="contacts" class="popup__label">Contacts</label>
+      <input
+        id="contacts"
+        class="popup__input"
+        type="text"
+        name="contact-info"
+      />
+      <button
+        class="popup__submit-button popup__submit-button_type_message"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+    <div class="popup popup_type_message">
+      <h2 class="popup__title popup__title_type_message">Message sent</h2>
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
