@@ -6,7 +6,9 @@ const contactPopup= document.querySelector('.popup_type_contact-us');
 const contactLink=document.querySelector('.menu_link_type_contact');
 const messagePopup=document.querySelector('.popup_type_message');
 const popupMessageBtn=document.querySelector('.popup__submit-button_type_message');
-
+const closeJoinPopupBtn=document.querySelector('.popup__close-button');
+const closeMessageBtn=document.querySelector('.popup__close-button_type_message');
+const closeContactPopupBtn=document.querySelector(".popup__close-button_type_contact");
 function openPopup(popup){
     popup.classList.add(`popup_is-opened`);
 }
@@ -19,8 +21,7 @@ partnersButton.addEventListener('click',()=> {openPopup(popupFormJoin)});
 contactLink.addEventListener('click',()=>{ openPopup(contactPopup)});
 
 popupMessageBtn.addEventListener('click' , ()=> {openPopup(messagePopup)});
-
-popupFormJoin.addEventListener('click', ()=>{
-  closePopup(popupFormJoin)
-});
+closeJoinPopupBtn.addEventListener('click', ()=> closePopup(popupFormJoin));
+closeMessageBtn.addEventListener('click', ()=>{closePopup(messagePopup)} );
+closeContactPopupBtn.addEventListener("click", ()=> {closePopup(contactPopup)});
 

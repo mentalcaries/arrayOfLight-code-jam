@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    padding:40px;;
+    padding:28px;
     box-sizing: border-box;
     z-index: 1;
+    position: relative;
 }
