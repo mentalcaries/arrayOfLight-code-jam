@@ -12,7 +12,6 @@
 @import url(../blocks/header/__content/header__content.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__subtitle/header__subtitle.css);
-@import url(../blocks/header/__button/header__button.css);
 @import url(../blocks/header/__button-link/header__button-link.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__title/cards__title.css);
@@ -22,7 +21,6 @@
 @import url(../blocks/card/__title/card__title.css);
 @import url(../blocks/cards/__subtitle/cards__subtitle.css);
 @import url(../blocks/cards/__button/cards__button.css);
-@import url(../blocks/cards/__button-link/cards__button-link.css);
 @import url(../blocks/title-item/title-item.css);
 @import url(../blocks/partners/partners.css);
 @import url(../blocks/partners/__title/partners__title.css);

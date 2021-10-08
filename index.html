@@ -9,11 +9,11 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <menu class="menu">
-        <li class="menu__list">
+      <div class="menu">
+        <div class="menu__list">
           <a href="#how-it-works" class="menu__link">how it works</a>
           <a href="#partners" class="menu__link">partners</a>
-        </li>
+        </div>
         <a href="#header">
           <img
             src="./images/logo__image.jpg"
@@ -21,11 +21,11 @@
             class="menu__logo"
           />
         </a>
-        <li class="menu__list">
+        <div class="menu__list">
           <a href="#" class="menu__link menu_link_type_contact">contact us</a>
           <a href="#" class="menu__link menu_type_join-in">join in</a>
-        </li>
-      </menu>
+        </div>
+      </div>
       <header class="header" id="header">
         <div class="header__content-wrapper">
           <img src="./images/header__image.jpg" alt="" class="header__image" />
@@ -36,13 +36,12 @@
             <p class="header__subtitle">
               Add some love and personal touch to your online-shopping cart
             </p>
-            <button class="header__button" type="button">
-              <a
-                href="https://mentalcaries.github.io/smilevery-react/"
-                class="header__button-link"
-                >Deliver a smile</a
-              >
-            </button>
+
+            <a
+              href="https://mentalcaries.github.io/smilevery-react/"
+              class="header__button-link"
+              >Deliver a smile></a
+            >
           </div>
           <img src="./images/header__image2.jpg" alt="" class="header__image" />
         </div>
@@ -105,13 +104,11 @@
         <p class="cards__subtitle">
           No extra fee for the postcard charged - Smilevery is free and fun!
         </p>
-        <button class="cards__button" type="button">
-          <a
-            href="https://mentalcaries.github.io/smilevery-react/"
-            class="cards__button-link"
-            >Give it a try
-          </a>
-        </button>
+        <a
+          href="https://mentalcaries.github.io/smilevery-react/"
+          class="cards__button"
+          >Give it a try
+        </a>
       </section>
       <section class="partners" id="partners">
         <h2 class="partners__title">Smilevery Family</h2>
@@ -185,8 +182,8 @@
       </footer>
     </div>
     <div class="popup popup_type_join-us">
-      <h2 class="popup__title">Join us</h2>
       <form class="popup__form" name="user_info">
+        <h2 class="popup__title">Join us</h2>
         <label for="name" class="popup__label">Full name</label>
         <input type="text" id="name" class="popup__input" name="user-name" />
         <label for="business-name" class="popup__label">Business name</label>

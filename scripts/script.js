@@ -10,6 +10,9 @@ const popupMessageBtn=document.querySelector('.popup__submit-button_type_message
 function openPopup(popup){
     popup.classList.add(`popup_is-opened`);
 }
+function closePopup(popup){
+  popup.classList.remove(`popup_is-opened`);
+}
 joinInLink.addEventListener('click', ()=>{openPopup(popupFormJoin)});
 partnersButton.addEventListener('click',()=> {openPopup(popupFormJoin)});
 
@@ -17,12 +20,7 @@ contactLink.addEventListener('click',()=>{ openPopup(contactPopup)});
 
 popupMessageBtn.addEventListener('click' , ()=> {openPopup(messagePopup)});
 
-///document.addEventListener('click', ()=> {
-  //  if (popupFormJoin.classList.contains(".popup_is-opened")){
-        
-   // }
-   // else {
-  //      (!popupFormJoin.classList.remove(`popup_is-opened`));
-  //      }
-//})
+popupFormJoin.addEventListener('click', ()=>{
+  closePopup(popupFormJoin)
+});
 
