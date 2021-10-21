@@ -20,8 +20,8 @@ partnersButton.addEventListener('click',()=> {openPopup(popupFormJoin)});
 
 contactLink.addEventListener('click',()=>{ openPopup(contactPopup)});
 
-popupMessageBtn.addEventListener('click' , ()=> {openPopup(messagePopup)});
+contactPopup.addEventListener('submit' , (evt)=> {evt.preventDefault(); openPopup(messagePopup)});
 closeJoinPopupBtn.addEventListener('click', ()=> closePopup(popupFormJoin));
-closeMessageBtn.addEventListener('click', ()=>{closePopup(messagePopup)} );
+contactPopup.addEventListener('submit', ()=>{closePopup(messagePopup)} );
 closeContactPopupBtn.addEventListener("click", ()=> {closePopup(contactPopup)});
 
